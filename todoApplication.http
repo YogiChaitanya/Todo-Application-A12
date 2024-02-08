@@ -1,0 +1,99 @@
+#
+#
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?status=TO%20DO
+
+#
+##
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH
+
+#
+###
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH&status=IN%20PROGRESS
+
+
+#
+####
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?search_q=Buy
+
+#
+#####
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?category=WORK&status=DONE
+
+#
+######
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?category=HOME
+
+#
+#######
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/?category=LEARNING&priority=HIGH
+
+
+##
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/1/
+
+###
+GET https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/agenda/
+
+
+####
+POST https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/
+Content-Type: application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+
+#####
+#
+PUT https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
+
+#####
+##
+PUT https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/2/
+Content-Type: application/json
+
+{
+  "priority": "HIGH"
+}
+
+
+#####
+###
+PUT https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type: application/json
+
+{
+  "todo": "Clean the garden"
+}
+
+#####
+####
+PUT https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type: application/json
+
+{
+  "category": "LEARNING"
+}
+
+#####
+#####
+PUT https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/1/
+Content-Type: application/json
+
+{
+  "dueDate": "2021-01-12"
+}
+
+
+######
+DELETE https://yogichaitanyapncjfnjscadoqbs.drops.nxtwave.tech/todos/9/
